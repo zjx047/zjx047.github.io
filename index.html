@@ -1,26 +1,116 @@
-<html>
- <head>
-	 <meta charset="utf-8" />
-	 <title>Fiona's page</title>
-	<style>
-		h1 {
-			font-family: Arial, sans-serif;
-		}
-		p {
-			color: indigo;
-			font-size: 16px;
-		}
-	</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiona's Page</title>
+    <link rel="icon" href="images/sheep.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #000000;
+            background-color: skyblue; /* Set background color */
+            padding: 10px; /* Add padding for better appearance */
+            margin: 0; /* Remove default margin */
+        }
+        h2 {
+            text-align: center;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+        }
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+        .recommendations, .puzzle {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+        }
+        h3 {
+            margin: 0;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+	.book-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .book {
+            display: flex;
+            align-items: center;
+            margin: 10px; /* Space between book items */
+        }
+        .book img {
+            margin-right: 10px;
+            width: 100px;
+        }
+	#answer {
+            display: none; /* Hide the answer initially */
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
 
- </head>
- <body>
-	 <h2 style="text-align: center;">
-		 Hello, welcome to Fiona's webpage.<br>
-	 </h2>
-    <img src="images/greetings_image.avif" alt="Greetings image" width="600" />
-    <p>To see the source code for this website, visit my 
-    	<a href="https://github.com/zjx047/zjx047.github.io">GitHub repository</a>.
+    <h1>Welcome to Fiona's Webpage!</h1>
+    <img src="images/greetings_image.avif" alt="Greetings image"/>
+
+    <p>Here I share some things I find interesting :) </p>
+    
+    <div class="recommendations">
+        <h3>Fiona's Book Recommendations</h3>
+        <div class="book">
+            <img src="images/book1.jpg" alt="Book 1" width="100"/>
+            <p>- As I Lay Dying by William Faulkner</p>
+        </div>
+        <div class="book">
+            <img src="images/book2.jpg" alt="Book 2" width="100"/>
+            <p>- Sophie's Choice by William Styron</p>
+        </div>
+        <div class="book">
+            <img src="images/book3.jpg" alt="Book 3" width="100"/>
+            <p>- The Mandarins by Simone de Beauvoir</p>
+        </div>
+    </div>
+
+    <div class="puzzle">
+        <h3>Puzzle</h3>
+	<p>There are one hundred people standing in a circle. They count off beginning at one and ending at one hundred. </p>
+	<p>Since they are in a circle, ONE is next to TWO and ONE HUNDRED. ONE has a sword and kills TWO. He passes the sword to THREE who kills FOUR.</p>
+	<p>And so forth. NINETY-NINE kills ONE HUNDRED and passes the sword to ONE.</p>
+	<p>Then ONE kills THREE and passes the sword to FIVE. This goes on until only one person is left standing. Which number is he?<br></p>
+	<button onclick="toggleAnswer()">Show Answer</button>
+        <p id="answer">73. Do you know why?</p>
+    </div>
+
+    <p>To see the source code for this website, visit my
+        <a href="https://github.com/zjx047/zjx047.github.io">GitHub repository</a>.
     </p>
     <p>To contact me, email me at: fz321@ic.ac.uk</p>
- </body>
+
+    <footer>
+        &copy; 2024 Fiona
+    </footer>
+</body>
 </html>
