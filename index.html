@@ -50,18 +50,13 @@
             color: #555;
         }
 	.book-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            display: flex; /* Flexbox for horizontal layout */
+            justify-content: center; /* Center the items */
+            flex-wrap: wrap; /* Allow wrapping if necessary */
         }
         .book {
-            display: flex;
-            align-items: center;
             margin: 10px; /* Space between book items */
-        }
-        .book img {
-            margin-right: 10px;
-            width: 100px;
+            text-align: center; /* Center text under the book */
         }
 	#answer {
             display: none; /* Hide the answer initially */
@@ -72,7 +67,6 @@
     </style>
 </head>
 <body>
-
     <h1>Welcome to Fiona's Webpage!</h1>
     <img src="images/greetings_image.avif" alt="Greetings image"/>
 
