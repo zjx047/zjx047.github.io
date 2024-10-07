@@ -50,21 +50,33 @@
             color: #555;
         }
 	.book-container {
-            display: flex; /* Flexbox for horizontal layout */
-            justify-content: center; /* Center the items */
-            flex-wrap: wrap; /* Allow wrapping if necessary */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .book {
-            margin: 10px; /* Space between book items */
-            text-align: center; /* Center text under the book */
+            margin: 10px; 
+            text-align: center;
+	    flex: 1;
+            max-width: 150px;
         }
 	#answer {
-            display: none; /* Hide the answer initially */
+            display: none;
             text-align: center;
             margin-top: 10px;
             font-weight: bold;
         }
     </style>
+    <script>
+    function toggleAnswer() {
+        const answerElement = document.getElementById('answer');
+        if (answerElement.style.display === 'none') {
+            answerElement.style.display = 'block';
+        } else {
+            answerElement.style.display = 'none';
+        }
+    }
+    </script>
 </head>
 <body>
     <h1>Welcome to Fiona's Webpage!</h1>
